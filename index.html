@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="alert" id="alert"></div>
+            <h1>Base Converter</h1>
+            <div class="form">
+                <p>Number1:</p>
+                <input type="text" value="2" id="nb1" placeholder="number 1" min="0">
+                <p>Base1:</p>
+                <input type="number" id="b1" value="10" class="base" placeholder="base 1" min="2" max="36">
+            </div>
+            <div class="form">
+                <p>Number2:</p>
+                <input type="text" id="nb2" placeholder="number 2" readonly>
+                <p>Base2:</p>
+                <input type="number" id="b2" value="2" class="base" placeholder="base 2" min="2" max="36">
+            </div>
+            <div class="info">
+                > Please remove all zero before number and spaces in input. <br>
+                > Can crash with high values.
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
